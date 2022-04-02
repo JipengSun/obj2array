@@ -15,7 +15,7 @@ void gl.vertexAttribPointer(index, size, type, normalized, stride, offset);
 2. The length of a vertex unit in vertex buffer array (Stride)
 
 ```
-conda create --name OpenGL python=3.9 
+conda create --name OpenGL python=3.9 --file requirements.txt
 
 conda activate OpenGL
 
