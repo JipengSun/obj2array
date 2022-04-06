@@ -65,4 +65,11 @@ Depends on your application, copy that vertex array txt info and assign it to yo
 
 2.00.DotsAndLine will show object vertices by dots and lines using the vertex_array_output.txt. An expected output scene would be
 
+![Dots And Line](https://github.com/JipengSun/obj2array/blob/main/readme_imgs/dots_lines.png)
+
 ColoeredMultiObj will show object vertices and surfaces using the vertex_normal_array_output.txt. It is spinning and the spin speed can be controlled by the button.
+
+![Spinning Surface 1](https://github.com/JipengSun/obj2array/blob/main/readme_imgs/spining_bear_1.png)
+
+
+![Spinning Surface 2](https://github.com/JipengSun/obj2array/blob/main/readme_imgs/spining_bear_2.png)
