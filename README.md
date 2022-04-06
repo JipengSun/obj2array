@@ -58,6 +58,8 @@ Example .obj file is provided under obj_data foler, you can put your own .obj fi
 
 Simply set the file_name variable to your .obj file name in Line 6 (default is the Teddy Bear one) and use python to run obj_converter.py. It will return two .txt files under ./output folder and output the vertices number in the terminal.
 
+If you prefer to use jupyter to see the process, we also provide jupyter notebook. Please run obj_test.ipynb
+
 ### Modify WebGL Code
 Depends on your application, copy that vertex array txt info and assign it to your WebGL vertex array. Please make sure to also change the vertices number information. Two example WebGl code are provided under ./WebGL_Demo_Code folder. 
 
