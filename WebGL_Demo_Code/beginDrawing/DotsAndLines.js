@@ -74,7 +74,7 @@ function main() {
 
   // Draw connect-the-dots for 6 vertices (never 'vertexes'!!).
   // see http://www.khronos.org/opengles/sdk/docs/man/xhtml/glDrawArrays.xml
- gl.drawArrays(gl.TRIANGLES, 0, n); // gl.drawArrays(mode, first, count)
+ gl.drawArrays(gl.LINE_LOOP, 0, n); // gl.drawArrays(mode, first, count)
 			//mode: sets drawing primitive to use. Other valid choices: 
 				// gl.LINES, gl.LINE_STRIP, gl.LINE_LOOP, 
 				// gl.TRIANGLES, gl.TRIANGLES_STRIP, gl.TRIANGLE_FAN
