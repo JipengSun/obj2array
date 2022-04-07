@@ -48,8 +48,11 @@ for line in Lines:
 file1.close()
 #print(vertexArray)
 
+assert len(vertexIndexArray)!=0, 'No Vertices Found in .obj File. Please Use A Valid One.'
 va = normalize_CVV(vertexArray)
 final_vertex_array = []
+
+assert len(vertexIndexArray)!=0, 'Please Use An .obj File With Valid Surface Info.'
 for idx,triangle in enumerate(vertexIndexArray):
     for i in range(3):
         final_vertex_array.append(va[int(triangle[i])-1])
