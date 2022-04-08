@@ -20,7 +20,7 @@ def add_surface_normal(final_vertex_array):
     vf = np.array(final_vertex_array).astype(float)
     #print(vf.shape)
     edge1 = vf[1::3] - vf[0::3]
-    edge2 = vf[2::3] - vf[0::3]
+    edge2 = vf[2::3] - vf[1::3]
     normal = np.cross(edge1[:,:3],edge2[:,:3])
     normal_norm = (normal.T/np.linalg.norm(normal,axis=1).T).T
     vn = np.repeat(normal_norm,3,axis=0)
