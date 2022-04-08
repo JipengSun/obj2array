@@ -82,4 +82,4 @@ ColoeredMultiObj will show object vertices and surfaces using the vertex_normal_
 
 ![Spinning Surface 5](https://github.com/JipengSun/obj2array/blob/main/readme_imgs/teapot_1.png)
 
-![Spinning Surface 6](https://github.com/JipengSun/obj2array/blob/main/readme_imgs/teapot_1.png)
+![Spinning Surface 6](https://github.com/JipengSun/obj2array/blob/main/readme_imgs/teapot_2.png)
