@@ -59,7 +59,7 @@ for idx,triangle in enumerate(vertexIndexArray):
 
 vertex_normal_array = add_surface_normal(final_vertex_array)
 
-with open(output_folder+'vertex_normal_array_output.txt', 'w') as f:
+with open(output_folder+'vertex_normal_array_output_'+file_name+'.txt', 'w') as f:
     for idx,vertex in enumerate(vertex_normal_array):
         f.write(','.join(str(x) for x in vertex))
         if idx < len(vertex_normal_array)-1:
@@ -68,7 +68,7 @@ f.close()
 
 #print('Number of Vertices: '+str(len(vertex_normal_array)))
 
-with open(output_folder+'vertex_array_output.txt', 'w') as f:
+with open(output_folder+'vertex_array_output_'+file_name+'.txt', 'w') as f:
     for idx,vertex in enumerate(final_vertex_array):
         f.write(','.join(str(x) for x in vertex))
         if idx < len(final_vertex_array)-1:
