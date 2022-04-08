@@ -3,7 +3,9 @@ import numpy as np
 data_path = './obj_data/'
 output_folder = './output/'
 
-file_name = 'TeddyBear01-n.obj'
+#file_name = 'TeddyBear01-n.obj'
+file_name = 'bunny.obj'
+
 
 def normalize_CVV(vertexArray):
     va = np.array(vertexArray).astype(float)
