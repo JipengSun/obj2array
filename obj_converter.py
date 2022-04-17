@@ -5,7 +5,8 @@ output_folder = './output/'
 
 #file_name = 'TeddyBear01-n.obj'
 #file_name = 'bunny.obj'
-file_name = 'UtahTeapot01-n.obj'
+#file_name = 'UtahTeapot01-n.obj'
+file_name = 'tyra.obj'
 
 
 def normalize_CVV(vertexArray):
@@ -45,7 +46,14 @@ for line in Lines:
         vertexArray.append(vertex)
     if line[:2] == 'f ':
         vIndex = line[2:].split()
-        vertexIndexArray.append(vIndex)
+        if '/' in vIndex[0]:
+            vIA = []
+            for vI in vIndex:
+                vTemp = vI.split('/')
+                vIA.append(vTemp[0])
+            vertexIndexArray.append(vIA)
+        else:
+            vertexIndexArray.append(vIndex)
 
 
 file1.close()
