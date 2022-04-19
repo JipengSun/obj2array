@@ -33,6 +33,8 @@ The first two parts of the information are provided by the .txt file and the num
 
 ## Code Setup
 
+Before head into the configuration, if you have already had a workable Python environment with Numpy, just use it to run the .py file and no need to bother the setting below.
+
 ### Install conda
 
 We use conda to manage the environment. For conda installation, please refer to the official docs link.
