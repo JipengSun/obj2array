@@ -6,7 +6,8 @@ output_folder = './output/'
 #file_name = 'TeddyBear01-n.obj'
 #file_name = 'bunny.obj'
 #file_name = 'UtahTeapot01-n.obj'
-file_name = 'tyra.obj'
+#file_name = 'tyra.obj'
+file_name = 'smooth_sphere.obj'
 
 
 def normalize_CVV(vertexArray):

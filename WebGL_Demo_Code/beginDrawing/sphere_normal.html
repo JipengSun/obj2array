@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>ColoredMulti-Object</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="HTML5_canvas" width="500" height="500">
+    Please use a browser that supports HTML-5 "canvas" objects
+    </canvas>
+    <p>
+	<button type="button" onclick="spinDown()">Spin << </button>
+	<button type="button" onclick="runStop()"> Run/Stop</button>
+	<button type="button" onclick="spinUp()">Spin >> </button>
+
+		<! these commands create a push-button withlabels ++ CCW and -- CCW.
+			When users click the button, call the function name held in 'onclick'>
+    </p>
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../lib/cuon-matrix-quat03.js"></script>
+    <script src="sphere_normal.js"></script>
+  </body>
+</html>
