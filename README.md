@@ -1,7 +1,7 @@
 # obj2array
 
 ## Project Explanation
-Convert .obj file into JS vertex Float32Array for WebGL development. The generated vertex array contains scaled vertex coordinates in canonical viewing volume(CVV) and the normalized surface normal vector for each surface. This converter tool is developed by Jipeng Sun, Felipe Caldeira, and Prof. Jack Tumblin from Northwestern University for CS351-1 Intro to Computer Graphics course.
+Convert .obj file into JS vertex Float32Array for WebGL development. The generated vertex array contains scaled vertex coordinates in canonical viewing volume(CVV) and the normalized surface normal vector for each surface. This converter tool is developed by Jipeng Sun and Prof. Jack Tumblin from Northwestern University for CS351-1 Intro to Computer Graphics course.
 
 https://www.mccormick.northwestern.edu/computer-science/academics/courses/descriptions/351-1.html
 
@@ -62,28 +62,9 @@ Simply set the file_name variable to your .obj file name in Line 6 (default is t
 
 If you prefer to use jupyter to see the process, we also provide jupyter notebook. Please run obj_test.ipynb
 
-### Run obj_converter_soft.py
-
-Example .obj file is provided under obj_data foler, you can put your own .obj file under obj_data folder.
-
-Your first command line argument would be the obj file name. For example, if we want to run the 'bunny.obj' file:
-
-```
-
-python 'your_path_to_converter_file/obj_converter_soft.py' bunny
-
-```
-
-You should get your obj file name folder under output directory with 3 files.
-
-array.txt: The vertices array in the obj file. (Using gl.triangles primitive)
-
-array_hard_normal.txt: The vertices information with its hard surface normals (The triangles' normals.)
-
-array_soft_normal.txt: The vertices information with its soft surface normals (The normal vector for the vertex is the linear interpolation for the 3 vertex-shared triangles' surface normals.)
-
 ### Modify WebGL Code
 Depends on your application, copy that vertex array txt info and assign it to your WebGL vertex array. Please make sure to also change the vertices number information. Two example WebGl code are provided under ./WebGL_Demo_Code folder. 
+
 
 
 2.00.DotsAndLine will show object vertices by dots and lines using the vertex_array_output.txt. An expected output scene would be
